@@ -48,3 +48,9 @@ i{
 .footer{
     justify-content: flex-end;
 }
+
+.primary {
+    color: #fff;
+    background-color: #5298ff59;
+    border-color: #2c81ff;
+}

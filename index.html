@@ -18,18 +18,26 @@
             href="https://dummyjson.com/docs/products" target="_blank">API de productos</a>. Puedes buscar cualquier producto tan sólo ingesando su nombre. </i>
         
       </div>
-      <h4>Buscar Productos</h4>
-      <div class="mb-4 box">
-        <form class="d-flex" id="form" role="search">
-          <div>
-            <label class="control-label" for="q">Nombre:</label>
-            <input type="text" id="q" name="q" class="input-small" placeholder="Busca un producto..." required>
-
-            <button id="search-by-title-button" type="button" class="btn-sm btn-primary"
-              onclick="obtenerResultado()">Search</button>
-            <button id="search-by-title-reset" type="reset" class="btn-sm">Reset</button>
+      <div class="row">
+        <div class="col-6">
+          <h4>Buscar Productos</h4>
+          <div class="mb-4 box">
+            <form class="d-flex" id="form" role="search">
+              <div>
+                <label class="control-label" for="q">Nombre:</label>
+                <input type="text" id="q" name="q" class="input-small" placeholder="Busca un producto..." required>
+    
+                <button id="search-by-title-button" type="button" class="btn-sm primary"
+                  onclick="obtenerResultado()">Search</button>
+                <button id="search-by-title-reset" type="reset" class="btn-sm" style="background-color: #ffffffa8; border-color: white;">Reset</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
+        <div class="col-6">
+          <h4>Modificar Productos</h4>
+          <button type="button" id="crearProducto" class="btn-sm btn-secondary" onclick="crearProducto()" style="background-color: #2d3a8b94;border-color: #1c35c1;">Crear Producto</button>
+        </div>
       </div>
       
       <h4 class="mb-3">Todos los Resultados:</h4>

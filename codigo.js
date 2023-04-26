@@ -84,8 +84,9 @@ function obtenerResultado(){
 
                 boton = document.createElement("a")
                 boton.href = `verProducto.html?producto=${producto.id}`
-                boton.classList.add("btn", "btn-primary")
+                boton.classList.add("btn")
                 boton.setAttribute("id","boton" + contadorIds)
+                boton.setAttribute("style","color: #fff;background-color: #0054d1b5;border-color: #0f6cf7;")
                 boton.innerHTML = "Ver Producto"
                 cardBody.appendChild(boton)
 
@@ -109,3 +110,16 @@ const resetearRow = () => {
     removeAllChildNodes(row);
 }
 
+function crearProducto(){
+//crear producto
+fetch('https://dummyjson.com/products/add', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    title: 'BMW Pencil',
+    /* other product data */
+  })
+})
+.then(res => res.json())
+.then(console.log);
+}

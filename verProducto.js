@@ -153,7 +153,12 @@ fetch(consultaFinal)
     })
     .catch(err => console.error("error", err))
 
+function modificarProducto(){
+    
+}
+function eliminarProducto(){
 
+}
 
 
 
