@@ -1,0 +1,50 @@
+body {
+    background-image: url('https://modoweb.es/wp-content/uploads/2017/05/modo-web-diseno-de-pagina-web-fondo-05.jpg')
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4{
+    font-family: georgia;
+    color:aliceblue;
+}
+
+label {
+    color: aliceblue;
+    font-style: italic;
+}
+
+i{
+    color: rgb(185, 185, 185);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    max-height: 99%;
+}
+
+.titulo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.carousel{
+    width: 50%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.footer{
+    justify-content: flex-end;
+}
